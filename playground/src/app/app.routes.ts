@@ -10,7 +10,6 @@ export const appRoutes: Routes = [
     path: 'home',
     pathMatch: 'prefix',
     component: HomeComponent
-    // loadComponent: () => import('./home/home/home.component').then((c) => c.HomeComponent),
   },
   {
     path: '',
@@ -21,24 +20,20 @@ export const appRoutes: Routes = [
     path: 'tasklist',
     pathMatch: 'prefix',
     component: TaskListComponent
-    // loadComponent: () => import('./tasks/task-list/task-list.component').then((c) => c.TaskListComponent),
   },
   {
     path: 'taskedit',
     pathMatch: 'prefix',
     component: TaskEditComponent
-    // loadComponent: () => import('./tasks/task-edit/task-edit.component').then((c) => c.TaskEditComponent),
   },
   {
     path: 'taskdetail',
     pathMatch: 'prefix',
     component: TaskDetailComponent
-    // loadComponent: () => import('./tasks/task-detail/task-detail.component').then((c) => c.TaskDetailComponent),
   },
   {
     path: '**',
     pathMatch: 'full',
     component: ErrorComponent
-    // loadComponent: () => import('./shared/error/error.component').then((c) => c.ErrorComponent),
   },
 ]
